@@ -60,9 +60,11 @@ nav a{
 div.welcome-image{
   background-image: url(../images/welcome-image.jpg);
   height: 700px;
-  width: 1200px;
+  flex-basis: 1200px;
   margin: 0 auto;
   padding-top: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #welcome-message{
@@ -71,7 +73,7 @@ div.welcome-image{
 }
 
 div.tea-month{
-    width: 1000px;
+    flex-basis: 1000px;
     margin: 0 auto;
     flex-flow: wrap;
 }
@@ -97,9 +99,16 @@ div.store-item>h3{
 div.location{
   background-image: url("../images/locations-background.jpg");
   height: 500px;
-  width: 1200px;
+  flex-basis: 1200px;
   margin: 40px auto;
   flex-direction: column;
+  flex-flow: wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#location-header{
+  width: 100%;
 }
 
 div.location-box{
@@ -112,6 +121,7 @@ div.location-box{
 div.location-boxes{
   display: inline-flex;
   opacity: 1;
+  overflow: auto;
 }
 
 #contact{
