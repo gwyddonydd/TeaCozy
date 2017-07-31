@@ -3,8 +3,6 @@ html,body{
   margin: 0;
 }
 
-
-
 body{
   background-color: black;
   font-family: Helvetica, sans-serif;
@@ -12,7 +10,6 @@ body{
   font-size: 22px;
   opactiy: 0.9;
   text-align: center;
-
 }
 
 header{
@@ -28,9 +25,7 @@ div.header-container{
   display: flex;
   width: 100%;
   align-items: center;
-
 }
-
 
 img.logo{
   height: 50px;
@@ -49,9 +44,9 @@ header nav{
   padding-right: 20px;
 }
 
-
-nav ul{
+ul{
   list-style-type: none;
+  padding: 0
 }
 
 nav li{
@@ -77,28 +72,26 @@ div.flex-container{
   justify-content: center;
 }
 
-div.welcome-message{
+#welcome-message{
   background-color: black;
   width: 100%;
-
 }
 
 div.tea-month{
     width: 1000px;
     margin: 0 auto;
-    display: flex;
     flex-flow: wrap;
-  }
+    align-content: center;
+}
 
 div.store-items{
-
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  align-content: center;
+  width: 1000px;
 }
-div.store-item>h3{
 
+div.store-item>h3{
   padding: 0;
   margin: 0;
 }
@@ -107,4 +100,57 @@ div.store-item>h3{
   height: 200px;
   width: 300px;
   margin: 10px 5px;
+}
+
+div.location{
+  background-image: url("../images/locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: 40px auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.location-box{
+  background-color: black;
+  width: 300px;
+  margin: 15px 40px;
+  text-align: center;
+}
+
+div.location-boxes{
+  display: inline-flex;
+  opacity: 1;
+}
+
+li{
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+}
+
+#contact{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact h2{
+  margin: 30px auto;
+}
+#contact h5{
+  margin: 20px auto;
+}
+
+#copyright{
+  display:flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
 }
